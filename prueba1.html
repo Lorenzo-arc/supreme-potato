@@ -1,211 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Prueba Bootstrap</title>
-    <style>
-        form.form-example {
-    display: table;
-}
-
-div.form-example {
-    display: table-row;
-}
-
-label, input {
-    display: table-cell;
-    margin-bottom: 10px;
-}
-
-label {
-    padding-right: 10px;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julio Cortázar tribute</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <!--I added a Google font: Sofia using this link-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <style>
 
 
-    </style>
+    html * {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    header {
+      font-family: "Sofia", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: relative;
+      font-size: 30px;
+      font-style: italic;
+    }
+    
+    main {
+      background-color: #ddbebe;
+    }
+    
+  </style> 
+
 </head>
 <body>
-    
-    <h1> Lorenzo Antonio Rosales Cavaglieri </h1>
-    <h2>Whhy do I just write these and not important stuff?</h2>
-    
-    </br>
-    </br>
-    </br>
-    <div class="container">
-        <h1>My First Bootstrap Page</h1>
-        <p>This is some text.</p>
-      </div> 
+  <main>
+    <header> JULIO CORTÁZAR</header>
+    <h4>Argentinian-French novelist, short story writter, essayist and translator</h4>
 
-<div class="container-fluid">
-    <h1>My First Bootstrap Page</h1>
-    <p>This is some text.</p>
-  </div> 
+    <figure>
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FJulio_Cort%25C3%25A1zar&psig=AOvVaw1KiBabdifPLuxrLSM6ejN0&ust=1638383119884000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKig1PLawPQCFQAAAAAdAAAAABAJ" alt="Young Julio Cortázar Picture">
+      <figcaption>Pie de figura para la anterior</figcaption>
+    </figure>
 
-  <img  src="https://www.google.com/search?q=troll+face&client=firefox-b-d&sxsrf=AOaemvJ7_sY5JRUwNI4w6vIE3xvt8qbbGg:1638198361066&tbm=isch&source=iu&ictx=1&fir=K1PPMWeX9w91-M%252C8es0dsTklseWvM%252C_%253BIKAuuqR8zMNnpM%252CfS2hh81ahTOVwM%252C_%253B85hyUbP4-P7LzM%252CbUjWeCqA7fB9QM%252C_%253BQzL9iONWrYTxaM%252CikUTsHRMUmK-2M%252C_%253B4w01TItYKc511M%252CFAyGxgOsc3XjEM%252C_%253Bq7aadiYL0M3GBM%252CWE__tZipO9AFgM%252C_&vet=1&usg=AI4_-kQbbsGPjLCfqqpb43ZJG7OADCIuNA&sa=X&ved=2ahUKEwjtrYe77L30AhV4qJUCHZXJDK4Q_B16BAg6EAE#imgrc=K1PPMWeX9w91-M" class ="rounded float-start" alt="Troll Face">
-
-  <img src="https://www.google.com/search?q=poker+face&client=firefox-b-d&sxsrf=AOaemvKJnLld4V4IMr3MV2yUCylR1_RRJQ:1638198363917&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjbxLW87L30AhXwlZUCHajkCucQ_AUoAXoECAEQAw&biw=1366&bih=682#imgrc=4UweuZe2jHflNM" class= "rounded float-end" alt="Poker Face">
-
-  <table class="table">
-
-    <thead>
-
-      <tr>
-
-        <th scope="col">Nro</th>
-
-        <th scope="col">Nombre</th>
-
-        <th scope="col">Apellido</th>
-
-      </tr>
-
-    </thead>
-
-    <tbody>
-
-      <tr>
-
-        <th scope="row">1</th>
-
-        <td>Maximiliano</td>
-
-        <td>Guerra</td>
-
-      </tr>
-
-      <tr>
-
-        <th scope="row">2</th>
-
-        <td>Erik</td>
-
-        <td>Thomas</td>
-
-      </tr>
-
-    </tbody>
-
-  </table>
-
-  <div class="container">
-    <h2>Hover Rows</h2>
-    <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>            
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
-        </tr>
-        <tr>
-          <td>Mary</td>
-          <td>Moe</td>
-          <td>mary@example.com</td>
-        </tr>
-        <tr>
-          <td>July</td>
-          <td>Dooley</td>
-          <td>july@example.com</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <figure class="figure">
-
-    <img src="..." class="figure-img img-fluid rounded" alt="...">
-
-    <figcaption class="figure-caption">Figura 1.2</figcaption>
-
-</figure>
-
-
-<div class="mb-2">
-    <label for="formGroupExampleInput" class="form-label">Example label</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-  </div>
-  <div class="mb-5">
-    <label for="formGroupExampleInput2" class="form-label">Another label</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-  </div>
-
-  <form action="" method="get" class="form-example">
-    <div class="form-example">
-      <label for="name">Enter your name: </label>
-      <input type="text" name="name" id="name" required>
-    </div>
-    <div class="form-example">
-      <label for="email">Enter your email: </label>
-      <input type="email" name="email" id="email" required>
-    </div>
-    <div class="form-example">
-      <input type="submit" value="Subscribe!">
-    </div>
-  </form>
-
-  <div class="alert alert-primary" role="alert">
-
-    A simple primary alert—check it out!
-
-</div>
-
-<div class="alert alert-secondary" role="alert">
-
-  A simple secondary alert—check it out!
-
-</div>
-
-<div class="alert alert-success" role="alert">
-
-  A simple success alert—check it out!
-
-</div>
-
-<div class="alert alert-danger" role="alert">
-
-  A simple danger alert—check it out!
-
-</div>
-
-<div class="alert alert-warning" role="alert">
-
-  A simple warning alert—check it out!
-
-</div>
-
-<div class="alert alert-info" role="alert">
-
-  A simple info alert—check it out!
-
-</div>
-
-<div class="alert alert-light" role="alert">
-
-  A simple light alert—check it out!
-
-</div>
-
-<div class="alert alert-dark" role="alert">
-
-  A simple dark alert—check it out!
-
-</div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <section>
+      <p>Ac áva información de cortazar</p>
+      
+      <article>Julio Cortázar was born on 26 August 1914, in Ixelles,[3] a municipality of Brussels, Belgium. According to biographer Miguel Herráez, his parents, Julio José Cortázar and María Herminia Descotte, were Argentine citizens, and his father was attached to the Argentine diplomatic service in Belgium.[4]</article>
+      <article>Obras de él (foto de alguna obra-rayuela y/o bestiario) </article>
+    </section>
+  </main>
+  <footer> <a href="https://es.wikipedia.org/wiki/Julio_Cort%C3%A1zar" target="_blank">Hipervínculo a wikipedia, para mas info</a></footer>
 </body>
 </html>
