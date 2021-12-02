@@ -1,52 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Julio Cortázar tribute</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
-  <!--I added a Google font: Sofia using this link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!--I added a Google font: Sofia, using this link-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
   <style>
-
-
     html * {
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
-    header {
+    #main {
+      background-color: #ddbebe;
+      height: 100%;
+    }
+
+    #title {
       font-family: "Sofia", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      position: relative;
       font-size: 30px;
       font-style: italic;
+      position: relative;
+      text-align: center;
+
     }
-    
-    main {
-      background-color: #ddbebe;
+
+    h4 {
+      text-align: center;
     }
-    
-  </style> 
+
+    #tribute-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .div {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+
+    #img-div {
+      position: relative;
+      display: flex;
+      background-color: rgb(236, 232, 232);
+      width: 50%;
+      border-radius: 10px;
+      border: rgb(228, 224, 224) 0.5px solid;
+      flex-direction: column;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #image {
+      width: auto;
+      margin-top: 10px;
+      border-radius: 10px;
+
+    }
+
+    #img-caption {
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 3px;
+    }
+
+    .images {
+      border-radius: 10px;
+      width: auto;
+    }
+  </style>
 
 </head>
+
 <body>
-  <main>
-    <header> JULIO CORTÁZAR</header>
+  <main id="main">
+    <h1 id="title"> JULIO CORTÁZAR</h1>
     <h4>Argentinian-French novelist, short story writter, essayist and translator</h4>
 
-    <figure>
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FJulio_Cort%25C3%25A1zar&psig=AOvVaw1KiBabdifPLuxrLSM6ejN0&ust=1638383119884000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKig1PLawPQCFQAAAAAdAAAAABAJ" alt="Young Julio Cortázar Picture">
-      <figcaption>Pie de figura para la anterior</figcaption>
+    <figure id="img-div">
+      <img
+        src="https://www.esquirelat.com/wp-content/uploads/2018/04/7-instrucciones-para-la-vida-de-Julio-Cort%C3%A1zar.jpeg"
+        alt="Young Julio Cortázar Picture" id="image">
+      <figcaption id="img-caption">Julio Cortázar on his personal library, France</figcaption>
     </figure>
 
-    <section>
-      <p>Ac áva información de cortazar</p>
-      
-      <article>Julio Cortázar was born on 26 August 1914, in Ixelles,[3] a municipality of Brussels, Belgium. According to biographer Miguel Herráez, his parents, Julio José Cortázar and María Herminia Descotte, were Argentine citizens, and his father was attached to the Argentine diplomatic service in Belgium.[4]</article>
-      <article>Obras de él (foto de alguna obra-rayuela y/o bestiario) </article>
+    <br>
+    <br>
+
+    <section id="tribute-info">
+      <div class="div">
+        <p>
+          Julio Florencio Cortázar (Ixelles, 26 de agosto de 1914-París, 12 de febrero de 1984) fue un escritor y
+          traductor argentino. Considerado uno de los autores más innovadores y originales de su tiempo, fue maestro del
+          cuento, la prosa poética y la narración breve en general. Fue también creador de importantes novelas, las
+          cuales
+          inauguraron una nueva forma de hacer literatura en el mundo hispano, pues rompieron los moldes clásicos
+          mediante
+          narraciones que escapan de la linealidad temporal. Debido a los contenidos de su obra, que transitan en la
+          frontera entre lo real y lo fantástico, Cortázar suele ser relacionado con el realismo mágico e incluso con el
+          surrealismo. Además, es catalogado como uno de los exponentes centrales del boom latinoamericano.
+        </p>
+
+        <figure>
+          <img class="images" |
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Cortazar2.jpg/250px-Cortazar2.jpg"
+            alt="Julio Cortázar with lens">
+        </figure>
+      </div>
+      <div class="div">
+        <figure>
+          <img class="images" |
+            src="data:image/png;base64,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"
+            alt="Julio Cortázar with lens">
+
+          <p>
+            En 1948 obtuvo el título de traductor público de inglés y francés, tras cursar en apenas nueve meses
+            estudios que normalmente llevan tres años. El esfuerzo le provocó síntomas neuróticos, uno de los cuales —la
+            búsqueda de cucarachas en la comida— desapareció con la escritura del cuento Circe, que junto con los dos
+            cuentos anteriormente nombrados —aparecidos en la revista Los anales de Buenos Aires—, serían incluidos en
+            su primer libro bajo su nombre: Bestiario.n. 1​En 1949, publicó el poema dramático «Los reyes», primera obra
+            firmada con su nombre real e ignorada por la crítica. Durante el verano escribió una primera novela,
+            Divertimento, que de alguna manera prefigura a su novela Rayuela, la cual escribiría en 1963.
+          </p>
+
+      </div>
     </section>
   </main>
-  <footer> <a href="https://es.wikipedia.org/wiki/Julio_Cort%C3%A1zar" target="_blank">Hipervínculo a wikipedia, para mas info</a></footer>
+  <hr>
+  <footer> <a href="https://es.wikipedia.org/wiki/Julio_Cort%C3%A1zar" target="_blank">Hipervínculo a wikipedia, para
+      mas info</a></footer>
 </body>
+
 </html>
+
+
+
+<!-- Cosas a corregir : -->
+
+<!-- -Hay que agregar margin y/o padding porque el texto  -->
+<!-- y las imágenes comienzan directamente en la pantalla -->
+<!-- del navegador. -->
+
+<!-- -Va a ser mejor hacer un grid que flex para el tipo -->
+<!-- de texto que quiero hacer -->
