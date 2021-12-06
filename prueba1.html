@@ -35,15 +35,13 @@
     }
 
     #tribute-info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .div {
-      width: auto;
-      display: flex;
-      flex-direction: row;
-      
+      display: grid;
+      width: 100%;
+      grid-template-areas:
+        "image1 text1 text1 text1"
+        "text2 text2 text2 image2";
+      column-gap: 20px;
+      row-gap: 10px;
     }
 
 
@@ -64,7 +62,6 @@
       width: auto;
       margin-top: 10px;
       border-radius: 10px;
-
     }
 
     #img-caption {
@@ -73,9 +70,41 @@
       margin-bottom: 3px;
     }
 
-    .images {
-      border-radius: 10px;
+    .imagecontainer1 {
       width: auto;
+      grid-area: image1;
+      padding-left: 10px;
+
+    }
+
+    .imagecontainer2 {
+      width: auto;
+      grid-area: image2;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .textcontainer1 {
+      display: flex;
+      align-items: flex-start;
+      grid-area: text1;
+      padding-right: 20px;
+
+
+    }
+
+    .textcontainer2 {
+      grid-area: text2;
+      padding-left: 20px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .tribute-images {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
     }
   </style>
 
@@ -89,7 +118,7 @@
     <figure id="img-div">
       <img
         src="https://www.esquirelat.com/wp-content/uploads/2018/04/7-instrucciones-para-la-vida-de-Julio-Cort%C3%A1zar.jpeg"
-        alt="Young Julio Cortázar Picture" id="image">
+        alt="Julio Cortázar in his personal library" id="image">
       <figcaption id="img-caption">Julio Cortázar on his personal library, France</figcaption>
     </figure>
 
@@ -97,9 +126,9 @@
     <br>
 
     <section id="tribute-info">
-      <div class="div">
+      <div class="textcontainer1">
         <p>
-          Julio Florencio Cortázar (Ixelles, 26 de agosto de 1914-París, 12 de febrero de 1984) fue un escritor y
+          Julio Florencio Cortázar fue un escritor y
           traductor argentino. Considerado uno de los autores más innovadores y originales de su tiempo, fue maestro del
           cuento, la prosa poética y la narración breve en general. Fue también creador de importantes novelas, las
           cuales
@@ -109,30 +138,50 @@
           frontera entre lo real y lo fantástico, Cortázar suele ser relacionado con el realismo mágico e incluso con el
           surrealismo. Además, es catalogado como uno de los exponentes centrales del boom latinoamericano.
         </p>
+      </div>
 
+      <div class="imagecontainer1">
         <figure>
-          <img class="images" |
+          <img class="tribute-images"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Cortazar2.jpg/250px-Cortazar2.jpg"
-            alt="Julio Cortázar with lens">
+            alt="Julio Cortázar with a magnifying glass ">
         </figure>
       </div>
-      <div class="div">
+
+
+      <div class="imagecontainer2">
         <figure>
-          <img class="images" |
-            src="data:image/png;base64,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"
-            alt="Julio Cortázar with lens">
-
-          <p>
-            En 1948 obtuvo el título de traductor público de inglés y francés, tras cursar en apenas nueve meses
-            estudios que normalmente llevan tres años. El esfuerzo le provocó síntomas neuróticos, uno de los cuales —la
-            búsqueda de cucarachas en la comida— desapareció con la escritura del cuento Circe, que junto con los dos
-            cuentos anteriormente nombrados —aparecidos en la revista Los anales de Buenos Aires—, serían incluidos en
-            su primer libro bajo su nombre: Bestiario.n. 1​En 1949, publicó el poema dramático «Los reyes», primera obra
-            firmada con su nombre real e ignorada por la crítica. Durante el verano escribió una primera novela,
-            Divertimento, que de alguna manera prefigura a su novela Rayuela, la cual escribiría en 1963.
-          </p>
-
+          <img class="tribute-images"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Cort%C3%A1zar.jpg/800px-Cort%C3%A1zar.jpg"
+            alt="Young Julio Cortázar">
+        </figure>
       </div>
+
+
+      <div class="textcontainer2">
+        <ul style="list-style-type: square;">
+          <li><strong>1914</strong> - Nace Julio Florencio Cortázar en Bruselas, Bélgica. En el mismo año su familia y se refugian en Suiza debido a la Primera guerra mundial</li>
+          <li> <strong>1918</strong> - Su familia y él regresan a Argentina</li>
+          <li><strong>1932</strong> - Se formó como maestro normal y como;</li>
+          <li><strong>1935</strong> - Profesor de letras en la Escuela Normal de Profesores Mariano Acosta. Comienza la carrera de  Filosofía y Letras en la Universidad de Buenos Aires </li>
+          <li><strong>1939 - 1944</strong> - Cortázar vivió en Chivilcoy, en cuya Escuela Normal daba clases como profesor de literatura y era asiduo concurrente a las reuniones de amigos que se hacían en el local de fotografía de Ignacio Tankel.</li>
+          <li><strong>1945</strong> - Se mudó a la ciudad de Mendoza, en cuya Universidad Nacional de Cuyo impartió cursos de literatura francesa. </li>
+          <li><strong>1943</strong> -  Publica su primer cuento: "Bruja"</li>
+          <li><strong>1946</strong> - Juan Domingo Perón gana las elecciones presidenciales, Cortázar presenta su renuncia, «Preferí renunciar a mis cátedras antes de verme obligado a sacarme el saco, como les pasó a tantos colegas que optaron por seguir en sus puestos»</li>
+          <li><strong>1947</strong> - Regresó a Buenos Aires, donde comenzó a trabajar en la Cámara Argentina del Libro y ese mismo año publicó el cuento «Casa tomada» en la revista Los Anales de Buenos Aires, dirigida por Jorge Luis Borges</li>
+          <li><strong>1948</strong> - Obtuvo el título de traductor público de inglés y francés</li>
+          <li><strong>1951</strong> - Comienza su exilio. Dedica su vida a viajar, pero reside principalmente en París. Publica ese mismo año "Bestiario"</li>
+          <li><strong>1963</strong> - A pesar de haber realizado distintas publicaciones durante todos estos años, no se hace famoso hasta la publicación de Rayuela, su obra maestra que refunda el género. </li>
+          <li><strong>1981</strong> - el gobierno socialista de François Miterrand le otorga la nacionalidad francesa, el 24 de julio</li>
+          <li><strong>1983</strong> - viaja a Buenos Aires, para visitar a su madre después de la caída de la dictadura y la asunción del gobierno por el presidente Raúl Alfonsín. Las autoridades ignoran su presencia, pero es calurosamente recibido por la gente, que lo reconoce en las calles.</li>
+          <li><strong>1984</strong> - Fallece el 12 de febrero en París</li>
+        </ul>
+      </div>
+
+
+
+
+
     </section>
   </main>
   <hr>
