@@ -17,21 +17,20 @@
     }
 
     #main {
-      background-color: #ddbebe;
-      height: 100%;
+      background-color: #ffccac;
+      width: auto;
     }
 
     #title {
-      font-family: "Sofia", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 30px;
+      font-size: 50px;
       font-style: italic;
-      position: relative;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+      padding-top: 20px;
+      margin-bottom: 20px;
 
-    }
-
-    h4 {
-      text-align: center;
     }
 
     #tribute-info {
@@ -44,14 +43,19 @@
       row-gap: 10px;
     }
 
+    #tribute-link {
+      position: relative;
+      text-align: center;
+      height: 100%; 
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
 
     #img-div {
-      position: relative;
       display: flex;
-      background-color: rgb(236, 232, 232);
-      width: 50%;
+      background-color: #ecdabe;
+      width: 60%;
       border-radius: 10px;
-      border: rgb(228, 224, 224) 0.5px solid;
       flex-direction: column;
       align-items: center;
       margin-left: auto;
@@ -59,7 +63,8 @@
     }
 
     #image {
-      width: auto;
+      width:75%;
+      height: auto;
       margin-top: 10px;
       border-radius: 10px;
     }
@@ -87,7 +92,7 @@
 
     .textcontainer1 {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       grid-area: text1;
       padding-right: 20px;
 
@@ -98,7 +103,7 @@
       grid-area: text2;
       padding-left: 20px;
       display: flex;
-      align-items: flex-start;
+      align-items: flex-end;
     }
 
     .tribute-images {
@@ -112,9 +117,10 @@
 
 <body>
   <main id="main">
-    <h1 id="title"> JULIO CORTÁZAR</h1>
-    <h4>Argentinian-French novelist, short story writter, essayist and translator</h4>
-
+    <div id="title">
+      <h1> JULIO CORTÁZAR</h1>
+      <h5>Argentinian-French novelist, short story writter, essayist and translator</h4>
+    </div>
     <figure id="img-div">
       <img
         src="https://www.esquirelat.com/wp-content/uploads/2018/04/7-instrucciones-para-la-vida-de-Julio-Cort%C3%A1zar.jpeg"
@@ -129,14 +135,19 @@
       <div class="textcontainer1">
         <p>
           Julio Florencio Cortázar fue un escritor y
-          traductor argentino. Considerado uno de los autores más innovadores y originales de su tiempo, fue maestro del
-          cuento, la prosa poética y la narración breve en general. Fue también creador de importantes novelas, las
-          cuales
-          inauguraron una nueva forma de hacer literatura en el mundo hispano, pues rompieron los moldes clásicos
-          mediante
+          traductor argentino; este último oficio lo desempeñó para la Unesco y varias editoriales.​ Sin renunciar a su
+          nacionalidad argentina, optó por la francesa en 1981, en protesta contra la dictadura militar en su
+          país, que lo persiguió y prohibió y que él denunció a la prensa internacional desde su residencia en
+          París.
+
+          Considerado uno de los autores más innovadores y originales de su tiempo, fue maestro del cuento, la prosa
+          poética y la narración breve en general. Fue también creador de importantes novelas, las cuales inauguraron
+          una nueva forma de hacer literatura en el mundo hispano, pues rompieron los moldes clásicos mediante
           narraciones que escapan de la linealidad temporal. Debido a los contenidos de su obra, que transitan en la
           frontera entre lo real y lo fantástico, Cortázar suele ser relacionado con el realismo mágico e incluso con el
-          surrealismo. Además, es catalogado como uno de los exponentes centrales del boom latinoamericano.
+          surrealismo. Además, es catalogado como uno de los exponentes centrales del boom latinoamericano, junto a
+          otros escritores de renombre, entre ellos, los premio Nobel de literatura: Gabriel García Márquez y Mario
+          Vargas Llosa, y Carlos Fuentes, ganador del Premio Cervantes.
         </p>
       </div>
 
@@ -160,44 +171,42 @@
 
       <div class="textcontainer2">
         <ul style="list-style-type: square;">
-          <li><strong>1914</strong> - Nace Julio Florencio Cortázar en Bruselas, Bélgica. En el mismo año su familia y se refugian en Suiza debido a la Primera guerra mundial</li>
+          <li><strong>1914</strong> - Nace Julio Florencio Cortázar en Bruselas, Bélgica. En el mismo año su familia y
+            se refugian en Suiza debido a la Primera guerra mundial</li>
           <li> <strong>1918</strong> - Su familia y él regresan a Argentina</li>
           <li><strong>1932</strong> - Se formó como maestro normal y como;</li>
-          <li><strong>1935</strong> - Profesor de letras en la Escuela Normal de Profesores Mariano Acosta. Comienza la carrera de  Filosofía y Letras en la Universidad de Buenos Aires </li>
-          <li><strong>1939 - 1944</strong> - Cortázar vivió en Chivilcoy, en cuya Escuela Normal daba clases como profesor de literatura y era asiduo concurrente a las reuniones de amigos que se hacían en el local de fotografía de Ignacio Tankel.</li>
-          <li><strong>1945</strong> - Se mudó a la ciudad de Mendoza, en cuya Universidad Nacional de Cuyo impartió cursos de literatura francesa. </li>
-          <li><strong>1943</strong> -  Publica su primer cuento: "Bruja"</li>
-          <li><strong>1946</strong> - Juan Domingo Perón gana las elecciones presidenciales, Cortázar presenta su renuncia, «Preferí renunciar a mis cátedras antes de verme obligado a sacarme el saco, como les pasó a tantos colegas que optaron por seguir en sus puestos»</li>
-          <li><strong>1947</strong> - Regresó a Buenos Aires, donde comenzó a trabajar en la Cámara Argentina del Libro y ese mismo año publicó el cuento «Casa tomada» en la revista Los Anales de Buenos Aires, dirigida por Jorge Luis Borges</li>
+          <li><strong>1935</strong> - Profesor de letras en la Escuela Normal de Profesores Mariano Acosta. Comienza la
+            carrera de Filosofía y Letras en la Universidad de Buenos Aires </li>
+          <li><strong>1939 - 1944</strong> - Cortázar vivió en Chivilcoy, en cuya Escuela Normal daba clases como
+            profesor de literatura y era asiduo concurrente a las reuniones de amigos que se hacían en el local de
+            fotografía de Ignacio Tankel.</li>
+          <li><strong>1945</strong> - Se mudó a la ciudad de Mendoza, en cuya Universidad Nacional de Cuyo impartió
+            cursos de literatura francesa. </li>
+          <li><strong>1943</strong> - Publica su primer cuento: "Bruja"</li>
+          <li><strong>1946</strong> - Juan Domingo Perón gana las elecciones presidenciales, Cortázar presenta su
+            renuncia, «Preferí renunciar a mis cátedras antes de verme obligado a sacarme el saco, como les pasó a
+            tantos colegas que optaron por seguir en sus puestos»</li>
+          <li><strong>1947</strong> - Regresó a Buenos Aires, donde comenzó a trabajar en la Cámara Argentina del Libro
+            y ese mismo año publicó el cuento «Casa tomada» en la revista Los Anales de Buenos Aires, dirigida por Jorge
+            Luis Borges</li>
           <li><strong>1948</strong> - Obtuvo el título de traductor público de inglés y francés</li>
-          <li><strong>1951</strong> - Comienza su exilio. Dedica su vida a viajar, pero reside principalmente en París. Publica ese mismo año "Bestiario"</li>
-          <li><strong>1963</strong> - A pesar de haber realizado distintas publicaciones durante todos estos años, no se hace famoso hasta la publicación de Rayuela, su obra maestra que refunda el género. </li>
-          <li><strong>1981</strong> - el gobierno socialista de François Miterrand le otorga la nacionalidad francesa, el 24 de julio</li>
-          <li><strong>1983</strong> - viaja a Buenos Aires, para visitar a su madre después de la caída de la dictadura y la asunción del gobierno por el presidente Raúl Alfonsín. Las autoridades ignoran su presencia, pero es calurosamente recibido por la gente, que lo reconoce en las calles.</li>
-          <li><strong>1984</strong> - Fallece el 12 de febrero en París</li>
+          <li><strong>1951</strong> - Comienza su exilio. Dedica su vida a viajar, pero reside principalmente en París.
+            Publica ese mismo año "Bestiario"</li>
+          <li><strong>1963</strong> - A pesar de haber realizado distintas publicaciones durante todos estos años, no se
+            hace famoso hasta la publicación de Rayuela, su obra maestra que refunda el género. </li>
+          <li><strong>1981</strong> - el gobierno socialista de François Miterrand le otorga la nacionalidad francesa,
+            el 24 de julio</li>
+          <li><strong>1983</strong> - viaja a Buenos Aires, para visitar a su madre después de la caída de la dictadura
+            y la asunción del gobierno por el presidente Raúl Alfonsín. Las autoridades ignoran su presencia, pero es
+            calurosamente recibido por la gente, que lo reconoce en las calles.</li>
+          <li><strong>1984</strong> - Fallece el 12 de febrero en París a los 69 años</li>
         </ul>
       </div>
-
-
-
-
-
     </section>
+    <hr>
+    <section id="tribute-link">Puede saber más sobre este increíble escritor argentino haciendo click <a href="https://es.wikipedia.org/wiki/Julio_Cort%C3%A1zar" target="_blank">aquí</a></section>
   </main>
-  <hr>
-  <footer> <a href="https://es.wikipedia.org/wiki/Julio_Cort%C3%A1zar" target="_blank">Hipervínculo a wikipedia, para
-      mas info</a></footer>
+
 </body>
 
 </html>
-
-
-
-<!-- Cosas a corregir : -->
-
-<!-- -Hay que agregar margin y/o padding porque el texto  -->
-<!-- y las imágenes comienzan directamente en la pantalla -->
-<!-- del navegador. -->
-
-<!-- -Va a ser mejor hacer un grid que flex para el tipo -->
-<!-- de texto que quiero hacer -->
